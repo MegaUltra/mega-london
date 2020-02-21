@@ -14,21 +14,25 @@ const ContactPage = ({ data }, location) => {
     return (
       <Layout title={siteTitle}>
         <SEO title="Contact" keywords={[`contact`, `mega ultra studios`]} />
-  
-        <article className="post-content page-template no-image">
-        <Contact />
+
+        <div className="kg-embed-card kg-image-card kg-width-wide">
+              <Img
+                fluid={data.background5.childImageSharp.fluid}
+                className="kg-image"
+              />    
+        </div>
+
+        <article className="post-content page-template">
+        
           <div className="post-content-body">
+              
+             <header><h1>Contact</h1></header> 
+          <Contact />
             <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
               Clean, minimal, and deeply customisable. London is a theme made for
               people who appreciate simple lines.
             </h2>
-            <figure className="kg-card kg-image-card kg-width-full">
-              <Img
-                fluid={data.benchAccounting.childImageSharp.fluid}
-                className="kg-image"
-              />
-              <figcaption>Large imagery is at the heart of this theme</figcaption>
-            </figure>
+            
             <h3 id="dynamic-styles">Dynamic styles</h3>
             <p>
               London comes with photo-centric main layout best suited to
@@ -63,8 +67,8 @@ const ContactPage = ({ data }, location) => {
           title
         }
       }
-      benchAccounting: file(
-        relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+      background5: file(
+        relativePath: { eq: "background-5.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 1360) {

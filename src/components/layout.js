@@ -48,7 +48,7 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/MegaUltraPro"
                 title="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -56,28 +56,36 @@ const Layout = props => {
                 Facebook
               </a>
               <a
-                href="https://twitter.com"
-                title="Twitter"
+                href="https://www.amazon.com/v/megaultra"
+                title="Amazon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                Amazon
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
               <a
-                href="https://github.com/jooplaan/gatsby-london-night-and-day"
-                title="GitHub"
+                href="https://my.roku.com/add/megaultra"
+                title="Roku"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                Roku
+              </a>
+              <a
+                href="https://www.imdb.com/search/title/?companies=co0469320"
+                title="IMDB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                IMDB
+              </a>
+              <a
+                href="https://youtube.com/megaultrastudios"
+                title="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
               </a>
             </div>
           </div>
@@ -89,15 +97,15 @@ const Layout = props => {
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{" "}
-        <a
-          href="https://gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gatsby
-        </a>
+        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> {" "}
+        <Link
+                to={`/rss.xml`}
+                title="RSS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RSS
+              </Link>
       </footer>
     </div>
   )
